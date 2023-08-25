@@ -1,6 +1,6 @@
 "use client";
 
-import { getData } from "@/request/common";
+import { getData } from "@/app/modules/request";
 import React, { useEffect, useState } from "react";
 
 export default function Page() {

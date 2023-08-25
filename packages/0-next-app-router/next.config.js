@@ -3,6 +3,7 @@ const nextConfig = {
   async headers() {
     return [
       {
+        // next cors
         // matching all API routes
         source: "/api/:path*",
         headers: [
