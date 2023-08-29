@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": ""
+    "dev": "pnpm -r --filter=0-next-app-router run dev"
   },
   "keywords": [],
   "author": "",
