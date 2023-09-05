@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./global.css";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <body className="h-full">{children}</body>
+      <head>
+        <body className="h-full">{children}</body>
+      </head>
+      {/* 用了 next/script + beforeInteractive 也没能实现提前挂载啊= = */}
+      {/* <script src="https://code.jquery.com/jquery-3.7.1.js"></script> */}
+      <Script src="https://code.jquery.com/jquery-3.7.1.js"></Script>
     </html>
   );
 }
