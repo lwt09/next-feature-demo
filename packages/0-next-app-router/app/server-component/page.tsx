@@ -18,7 +18,7 @@ export default async function page() {
   return (
     <>
       <div>server-page</div>
-      <div>data: {data}</div>
+      <div>data: {JSON.stringify(data)}</div>
       <Link href={"/client-component"} prefetch>
         link to a (test prefetch)
       </Link>
