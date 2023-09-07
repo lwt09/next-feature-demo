@@ -1,4 +1,4 @@
-import { getData } from "@/app/modules/request";
+import { getData } from "@/modules/request";
 import Link from "next/link";
 import React from "react";
 
@@ -15,6 +15,7 @@ export default async function page() {
   // https://nextjs.org/docs/app/building-your-application/routing/route-handlers#opting-out-of-caching
 
   const data = await getData();
+  
   return (
     <>
       <div>server-page</div>

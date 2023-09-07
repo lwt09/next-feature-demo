@@ -1,6 +1,6 @@
 "use client";
 
-import { getData } from "@/app/modules/request";
+import { getData } from "@/modules/request";
 import React, { useEffect, useState } from "react";
 
 export default function Page() {
@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <>
       <div>client-page</div>
-      <div>data: {data}</div>
+      <div>data: {JSON.stringify(data) || null}</div>
     </>
   );
 }
