@@ -13,8 +13,9 @@ export default async function CacheRouter({
   const res = (await fetchData()) as any;
   return (
     <div>
-      {JSON.stringify(res)}
       {children}
+      ----layout:
+      <div>{JSON.stringify(res)}</div>
     </div>
   );
 }
