@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
 
-export default function d() {
+export default function d({ children }: { children: React.ReactNode }) {
   return (
-    <div>defaultRight</div>
-  )
+    <>
+      <div>defaultRight</div>
+      {children}
+    </>
+  );
 }

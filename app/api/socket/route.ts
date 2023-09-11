@@ -4,6 +4,7 @@ import { Server } from "socket.io";
 export async function GET(req: any) {
   let res = NextResponse.next() as any;
   
+  // TODO: res 里面拿不到 socket 数据
   if (!res.socket?.server?.io) {
     console.log("*First use, starting socket.io");
     // debugger

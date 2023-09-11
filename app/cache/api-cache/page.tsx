@@ -8,8 +8,8 @@ import React from "react";
 export const dynamic = "force-dynamic";
 
 const getDate = async () => {
-  const res = await fetch("http://127.0.0.1:3000/api/test-cache", {
-    method: "POST",
+  const res = await fetch("http://localhost:3000/api/test-cache", {
+    // method: "POST",
     cache: "no-store",
   });
   const data = await res.json();
