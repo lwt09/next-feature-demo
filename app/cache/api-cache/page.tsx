@@ -5,11 +5,11 @@ import React from "react";
 // 1. 不命中 full-route-cache ，所以开启 cache: no-cache
 // 2. 按文档应该是 都应该缓存的
 
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
 
 const getDate = async () => {
   const res = await fetch("http://localhost:3000/api/test-cache", {
-    // method: "POST",
+    method: "POST",
     cache: "no-store",
   });
   const data = await res.json();

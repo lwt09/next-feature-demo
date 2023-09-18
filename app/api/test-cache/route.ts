@@ -15,7 +15,7 @@ export async function GET() {
 export async function POST() {
   const res = await fetch("http://localhost:5000/postRandom", {
     method: "POST",
-    cache: "no-cache",
+    // cache: "no-cache",
   });
   return NextResponse.json(await res.json());
 }
