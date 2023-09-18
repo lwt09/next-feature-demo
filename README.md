@@ -1,8 +1,10 @@
-# NEST@latest-DEMO
+# NEST@latest-feature-DEMO
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 This project was developed to test new features of next13.
+
+All test examples are placed in the app folder.
 
 ## Getting Started
 
@@ -24,6 +26,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [PostgreSQL](https://www.postgresql.org/docs/)
 
 ## 测试 FEATURE
+
+所有测试的 feature demo 如下
 
 - APP ROUTER
   - [x] page.tsx
@@ -126,8 +130,10 @@ Operating System:
   tips: 我已经知道 next13 中不推荐直接在 client 中直接调用服务的 route hanlder，而应该在 server-component 获取数据完传递给 client-component
 
 ### 5. 加载 script
+
 用官方介绍的 Script 加载 jquery, 并且在 page.tsx 中读取 $, 系统报错（`Expected server HTML to contain a matching <script> in <html>.`）
 使用方式 ↓
+
 ```
 <Script
   strategy="beforeInteractive"
