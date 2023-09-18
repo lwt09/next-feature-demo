@@ -21,10 +21,10 @@ export default function RootLayout({
       <body className="h-full">{children}</body>
       {/* 用了 next/script + beforeInteractive 也没能实现提前挂载啊= = */}
       {/* <script src="https://code.jquery.com/jquery-3.7.1.js"></script> */}
-      <Script
+      {/* <Script
         strategy="beforeInteractive"
         src="https://code.jquery.com/jquery-3.7.1.js"
-      ></Script>
+      ></Script> */}
     </html>
   );
 }
